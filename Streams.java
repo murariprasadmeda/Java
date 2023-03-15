@@ -32,6 +32,9 @@ public class Streams{
     
     
     //builder pattren with streams and map
-    nums.stream().map(n->n*2).forEach(n->System.out.println(n));
+//    nums.stream().map(n->n*2).forEach(n->System.out.println(n));
+    
+//    builder pattren with streams and map
+  nums.stream().filter(n->n%2==1).map(n->n*2).forEach(n->System.out.println(n));
   }
 }

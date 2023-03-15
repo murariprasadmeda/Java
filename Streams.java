@@ -19,7 +19,12 @@ public class Streams{
 //    System.out.println(data.count()); //......................... uncomment to work 
     
     // sorted streams returns the another stream data
-    Stream<Integer> sortedData= data.sorted();
-    sortedData.forEach(n-> System.out.println(n));
+//    Stream<Integer> sortedData= data.sorted();
+//    sortedData.forEach(n-> System.out.println(n));
+    
+    
+    // using map function and lambada expression
+    Stream<Integer> mappedData= data.map(n-> n*2);
+    mappedData.forEach(n->System.out.println(n));
   }
 }

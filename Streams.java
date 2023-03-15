@@ -24,7 +24,14 @@ public class Streams{
     
     
     // using map function and lambada expression
-    Stream<Integer> mappedData= data.map(n-> n*2);
-    mappedData.forEach(n->System.out.println(n));
+//    Stream<Integer> mappedData= data.map(n-> n*2);
+//    mappedData.forEach(n->System.out.println(n));
+    
+    
+    
+    
+    
+    //builder pattren with streams and map
+    nums.stream().map(n->n*2).forEach(n->System.out.println(n));
   }
 }
